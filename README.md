@@ -62,4 +62,4 @@ This project is for academic purposes. Please cite appropriately if you adapt or
 
 ## Contact
 
-For questions or collaborations, please contact [Zhengze Zhang](mailto:zz999@columbia.edu) or open an issue in this repository. 
+For questions or collaborations, please contact [Zhengze Zhang](mailto:zhangzhengze2018@gmail.com) or open an issue in this repository. 
