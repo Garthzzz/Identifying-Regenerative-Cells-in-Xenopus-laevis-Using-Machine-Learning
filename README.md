@@ -1,4 +1,4 @@
-# Identifying Regenerative Organizing Cells in *Xenopus laevis* Using Multi-Cluster Analysis and Machine Learning
+# Identifying Regenerative Organizing Cells in Xenopus laevis Using Multi-Cluster Analysis and Machine Learning
 
 This repository contains all materials for our project on discovering and validating Regenerative Organizing Cells (ROCs) in *Xenopus laevis* tadpole tails, following up on the dataset and findings from [Aztekin *et al.*, *Science* **364**, 653–658 (2019)](https://doi.org/10.1126/science.aav9996).
 
