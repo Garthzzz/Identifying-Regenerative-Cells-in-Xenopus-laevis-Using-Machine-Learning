@@ -29,27 +29,6 @@ This repository contains all materials for our project on discovering and valida
 7. **data process2.py**  
    - A script demonstrating the main single-cell pipeline for each time point, performing QC, clustering (Leiden/Louvain/K-means), and marker selection (logreg, XGBoost, SVM). It also includes the optional 0 vs. 1,2,3 expression filter for identifying potential ROC clusters prior to overlap with Table 3.
 
-## How to Use
-
-1. **Obtain the h5ad data**  
-   - We do not store the raw `h5ad` file in this repository because of size. You can download it from a designated source or replicate the cleaning steps. Ensure that your `data process2.py` script points to the correct path for this file.
-
-2. **Install Dependencies**  
-   - We use Python 3, [scanpy](https://scanpy.readthedocs.io), [xgboost](https://xgboost.readthedocs.io), scikit-learn, and other standard libraries.
-
-3. **Run the Single-Cell Pipeline**  
-   - Execute `data process2.py` with the desired parameters (time point splits, cluster resolutions, etc.). This will generate subfolders like `0_leiden`, `1_louvain`, `2_kmeans`, containing CSVs of top marker genes and UMAP images.
-
-4. **Consolidate / Analyze**  
-   - Use `data analysis.py` or `data analysis2.py` to gather overlap counts/ratios with the `aav9996_tables3.xlsx` gene list. The scripts produce bar plots, best overlap records, and “strong” / “very strong” gene definitions.
-
-5. **Check Outputs**  
-   - The **FINAL_ANALYSIS** folder (or each ratio–resolution–kmeans folder) will accumulate CSV files summarizing the results (e.g., `best_overlap_count.csv`, `best_overlap_ratio.csv`, `strong_rocs_genes_per_timeMethod.csv`, etc.).
-
-## Notes
-
-- Because the dataset is large, we only keep the processed results and scripts here. If you want to replicate from scratch, see the methods in our PDF paper and place the raw data (or a cleaned `.h5ad`) in the correct directory.
-- Each folder naming convention indicates the filter ratio (`0` or `0.2`), the Leiden/Louvain resolution, and K-means cluster number. Example: **`ratio=0, res=2.0, kmeans n=45`** means we used a 0.0 portion threshold (no strict filter) for 0 vs. 1,2,3 changes, a high cluster resolution for Leiden=2.0 / Louvain=3.0, and K-means with 45 clusters.
 
 ## Reference
 
