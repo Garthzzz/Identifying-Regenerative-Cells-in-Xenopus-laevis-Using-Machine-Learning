@@ -1,0 +1,5 @@
+root_label,overlap_count,overlap_ratio
+"overlap filter ratio=0, resolution=1.0, kmeans n=10",0.7807606263982103,0.010410141685309453
+"overlap filter ratio=0, resolution=2.0, kmeans n=45",0.7936,0.010581333333333314
+"overlap filter ratio=0.2, resolution=1.0, kmeans n=10",0.7807606263982103,0.010410141685309453
+"overlap filter ratio=0.2, resolution=2.0, kmeans n=45",0.7936,0.010581333333333314
